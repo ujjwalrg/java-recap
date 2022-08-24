@@ -1,21 +1,9 @@
 package edu.ics211.h0;
 
-import java.util.InputMismatchException;
 import java.util.Random;
-import java.util.Scanner;
 
-public class Sqroots {
-    public static void main(String[] args) {
-        try (Scanner userIn = new Scanner(System.in)) {
-            System.out.println("Enter an Int value");
-            int input = userIn.nextInt();
-            System.out.print((returnArray(input))[0]);
-        } catch (InputMismatchException ime) {
-            System.out.println("Mismatch input");
-        }
-    }
-
-    public static double[] returnArray(int arg) {
+class Sqroots {
+    public double[] returnArray(int arg) {
         double[] arr = new double[4];
         int low = 2;
         if (arg > 2) {
@@ -30,4 +18,12 @@ public class Sqroots {
         }
         return arr;
     }
+}
+
+public class Manclass {
+    public static void main(String[] args) {
+        Sqroots hello = new Sqroots();
+        System.out.println((hello.returnArray(10)));
+    }
+
 }
