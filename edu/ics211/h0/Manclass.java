@@ -1,4 +1,4 @@
-package edu.ics211.h0;
+// package edu.ics211.h0;
 
 import java.util.Random;
 
@@ -14,6 +14,8 @@ class Sqroots {
                 arr[i] = Math.sqrt(result);
             }
         } else {
+            System.out.println("Is invalid, number must be greater than 2");
+            System.out.println("Is invalid, number must be greater than 2");
             System.out.println("Is invalid, number must be greater than 2");
         }
         return arr;
